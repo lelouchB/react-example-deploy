@@ -25,7 +25,7 @@ function App() {
     fetch("https://finalspaceapi.com/api/v0/character/?limit=12")
       .then((res) => res.json())
       .then((data) => setData(data));
-  }, [data]);
+  }, []);
 
   const classes = useStyles();
 
